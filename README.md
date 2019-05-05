@@ -40,7 +40,7 @@ Quich Url: http://18.206.38.49
         $ chmod 700 .ssh
         $ chmod 644 .ssh/authorized_keys
         
-* #### Install required pachages
+* #### Install required packages
     
         $ sudo apt-get update
         $ sudo apt-get install apache2
@@ -73,7 +73,7 @@ Quich Url: http://18.206.38.49
         $ python database.py
         $ python data_creation.py
         
-* #### setup configurations
+* #### Setup configurations
         $ sudo nano /etc/apache2/sites-available/FlaskApp.conf
 
         <VirtualHost *:80>
@@ -104,3 +104,20 @@ Quich Url: http://18.206.38.49
         $ sudo ufw allow 2200/tcp
         $ sudo ufw allow www
         $ sudo ufw allow ntp
+
+        Change the default post to 2200 instaead of 22
+        $ sudo nano /etc/ssh/sshd_config
+        Change post 22 to 2200
+
+* #### Helpful resources
+
+
+* Steps guidance from another github project 
+    * https://github.com/danhayden/udacity-fswd-nanodegree_project-5 
+
+
+* Configuration setup guidance
+    * https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
+    
+    * https://www.codementor.io/abhishake/minimal-apache-configuration-for-deploying-a-flask-app-ubuntu-18-04-phu50a7ft    
+
