@@ -8,6 +8,7 @@ The web app is Store App for mobile and computer accessories
 
 ## Server Details
 IP Adress: 18.206.38.49
+
 Quich Url: http://18.206.38.49
 
 ## Configuration process
@@ -27,12 +28,15 @@ Quich Url: http://18.206.38.49
         $ ssh key-gen
         Enter your path ex: /home/ubunto/.ssh/linuxCourse
         $ cat linuxCourse.pub
-        copy the output text 
+        copy the output text
+
         $ su - grader
         $ mkdir .ssh
         $ touch .ssh/authorizd_keys
+
         $ sudo nano .ssh/authorized_keys
         Paste the copied text in this file
+
         $ chmod 700 .ssh
         $ chmod 644 .ssh/authorized_keys
         
